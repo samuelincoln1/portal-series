@@ -1,0 +1,754 @@
+/*  SITE DESENVOLVIDO PELO ALUNO 725559 SAMUEL LINCOLN DE OLIVERIA GOMES  */  
+
+/*------------------------------------------NAV BAR-------------------------------------------*/
+
+header{
+   background-color: rgb(129, 160, 161);
+   
+}
+
+.header-content img {
+    max-width: 150px;
+}
+
+nav {
+    align-items: center;
+}
+
+.link { 
+    text-decoration: none;
+    font-size: 1.1em;
+    color: black;
+    margin: 10px;
+    padding: 10px;
+}
+
+.nav a:hover {
+    color: rgb(230, 230, 230);
+}
+
+input {
+    border-inline-color: black;
+    border-block-color: black;
+}
+
+::placeholder {
+    color: black;
+    opacity: 0.7;
+}
+
+.search * {
+    outline: none;
+    box-sizing: border-box;
+  }
+  .search__wrapper {
+    position: relative;
+    margin-left: 90px;
+  }
+.search__field {
+    width: 50px;
+    height: 50px;
+    color: transparent;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 1.20em;
+    padding: 0.35em 50px 0.35em 10px;
+    border: 1px solid transparent;
+    border-radius: 0;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    background-color: rgb(129, 160, 161);
+  }
+.search__field:focus {
+    border-bottom-color: rgb(129, 160, 161);
+    width: 15vw;
+    color: #2b2b2b;
+    cursor: default;
+  }
+.search__field:focus ~ .search__icon {
+    background-color: transparent;
+    cursor: pointer;
+    pointer-events: auto;
+  }
+.search__icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: rgb(129, 160, 161);
+    width: 50px;
+    height: 50px;
+    font-size: 1.35em;
+    text-align: center;
+    border-color: transparent;
+    border-radius: 50%;
+    pointer-events: none;
+    display: inline-block;
+    transition: background-color 0.3s ease-in-out;
+  }
+
+.searchbox  {
+    display: none;
+  }
+  
+.searchresponsive {
+    display: none;
+}
+  
+
+  
+/* ---------------------------------------------FIM DA NAVBAR-------------------------------------------*/
+
+.secao-cartaz {
+    overflow-x: hidden;
+}
+
+ h1 {
+   overflow: hidden;
+}
+h3 {
+    overflow: hidden;
+ }
+ 
+
+/* --------------------------------------------LANCAMENTOS----------------------------------------------*/
+.lancamentos {
+    min-height: 500px;
+}
+
+.secao-lancamentos {
+    background-color: #e9e9e9;
+    max-height: fit-content;
+}
+
+.lancamentos h1 {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.conteudo {
+    display: flex;
+    flex-direction: row;
+    min-height: 350px;
+}
+
+
+.video {
+    margin: 0px 30px 0px 15px;
+}
+
+.butao-sinopse {
+    display: none;
+}
+
+
+.texto {
+    font-size: 0.9em;
+}
+
+.texto span {
+    margin: 0px 20px 0px 0px;
+}
+
+.indicators-height {
+    padding: 40px;
+
+}
+
+
+.carousel-indicators li {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+}
+
+.carousel-indicators .active {
+    opacity: 0.5;
+}
+.carousel-indicators li {
+    position: relative;   
+}
+
+/* ---------------------------------------------FIM LANCAMENTOS-------------------------------------------*/
+
+/* ---------------------------------------------EM DESTAQUE-----------------------------------------------*/
+
+.top-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.top-flex h1 {
+    margin-top: 30px;
+}
+
+.form-select {
+    margin-top: 30px;
+}
+
+.destaque-imagens {
+    margin-top: 30px;
+    
+}
+
+/* ---------------------------------------------FIM DESTAQUE------------------------------------------------*/
+
+/* ---------------------------------------------AVALIAÇÕES------------------------------------------------*/
+
+
+.secao-avaliacao {
+    margin-top: 20px;
+}
+
+.avaliacao-texto {
+    margin-top: 30px;
+}
+
+.conteudo-texto {
+    padding-left: 20px;
+    
+}
+.text-justify {
+    text-align: justify;
+    min-height: 216px;    
+  }
+
+h5 {
+    font-weight: 900;
+}
+
+.p-2 {
+    margin-bottom: 20px;
+}
+/* ---------------------------------------------FIM AVALIAÇÕES----------------------------------------------*/
+
+/* ---------------------------------------------ENTREVISTAS------------------------------------------------*/
+.secao-entrevistas {
+        background-color: #e9e9e9;
+}
+
+.entrevistas .titulo h1 {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.secao-entrevistas .texto h5 {
+    display: inline;
+   
+}
+
+.secao-entrevistas .texto p {
+    margin-bottom: 0px;
+}
+
+.primeiro-p {
+    margin-top: 5px;
+}
+
+/* ---------------------------------------------FIM ENTREVISTAS--------------------------------------------*/
+
+/* ---------------------------------------------SOBRE----------------------------------------------*/
+
+
+
+
+
+.texto-novidades span {
+    background-color: #6c757d;
+    padding: 5px;
+    border-radius: .25rem;
+    color: white;
+}
+.texto-novidades a:hover {
+    text-decoration: underline;
+}
+
+hr:not([size]) {
+    height: 1px;
+    width: 900px;
+}
+.conteudo2 {
+    display: flex;
+    flex-direction: row;
+    font-size: 0.76rem;
+    
+}
+
+.conteudo2 h5 {
+  margin-top: -30px;
+  margin-bottom: 0;
+}
+
+.sobre {
+    font-size: 1rem;
+    max-width: 400px;
+}
+
+
+
+
+/* ---------------------------------------------FIM SOBRE----------------------------------------------*/
+
+
+/* ---------------------------------------------FOOTER----------------------------------------------*/
+
+footer {
+    background:  #e9e9e9;
+    margin-top: 30px;
+    min-height: 100px;
+}
+
+footer p {
+    text-align: center;
+    margin-top: 30px;
+    
+}
+
+/* ---------------------------------------------FIM FOOTER----------------------------------------------*/
+
+
+/* --------------------------------------------- RESPONSIVIDADE----------------------------------------------*/
+
+#menuToggle {
+    display: none;
+}
+
+.menu-icon {
+    display: none;
+}
+
+
+@media screen and (max-width: 1872px) {
+   
+   
+    header {
+        
+        top: 0px;
+        width: 100%;
+       
+      
+    }
+
+    header .link {
+        font-size: 0.9rem;
+    }
+
+    .search__wrapper {
+        margin-left: 95px;
+      }
+ 
+    
+}
+
+@media screen and (max-width: 1718px) {
+
+    
+    .conteudo2 img {
+        display: none;
+    }
+    
+    hr {
+        display: none;
+    }
+    
+    .novidades {
+        margin: 0;
+        padding: 0;
+    }
+
+    .novidades .col-8 {
+        width: 100%;
+    }
+    
+    .novidades .col-4 {
+        width: 100%;
+    }
+    
+    .titulosobre {
+        margin-top: 50px;
+        text-align: center;
+    }
+
+    .titulonovidades {
+        margin: 0!important;
+        padding: 0 !important;
+        text-align: center;
+    }
+  
+    .novidades h5 {
+        margin-top: 0;
+        padding: 0;;
+    }
+
+    .p-sobre {
+        text-align: justify;
+        text-align: center;
+        font-size: 0.7rem;
+        padding: 0 30px 0 30px;
+    }
+
+    .texto-novidades {
+        overflow-y: hidden;
+    }
+
+}
+
+@media screen and (max-width: 1552px) {
+    header .link {
+        font-size: 0.8rem;
+    }
+    
+    .search * {
+        display: none;
+      }
+    
+    .search__field {
+        display: none;
+      }
+    .search__field:focus {
+        display: none;
+      }
+    .search__field:focus ~ .search__icon {
+        display: none;
+      
+      }
+    .search__icon {
+        display: none;
+      }
+
+    .searchbox {
+        display: initial;
+        width: 200px;
+        float: right;
+        padding: 6px;
+        border: none;
+        margin-top: 8px;
+        margin-right: 16px;
+        font-size: 17px;
+        background-color:  rgb(213, 221, 221);
+        border-radius: 0.5vw;
+    }
+
+    .searchresponsive {
+        display: initial;
+        margin-left: -60px;
+        margin-right: 20px;
+
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    
+   * {
+       overflow-x: hidden;
+       
+   }
+   .col-lg-10 {
+        width: 100%;
+    }
+    
+    header {
+        position: fixed;
+        top: 0; 
+        width: 100%;
+    }
+    
+    header nav {
+        width: 100%;
+        height: 0%;
+        display: flex;
+        position: fixed;
+        flex-wrap: wrap;
+        align-content: center;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        bottom: 0px;
+        background-color: rgba(0,0,0,0.9);
+        overflow: hidden;   
+
+        transition: height 0.4s;
+        
+    }
+    
+    .menu-icon {
+        display: block;
+        color: white;
+        width: 50px;
+        height: inherit;
+        position: absolute;
+        top:40px;
+        right: 50px;
+        line-height: 60px;
+        z-index: 999;
+        padding-right: 0;
+    }
+
+    .menu-icon i {
+        font-size: 1.4rem;
+    }
+
+    nav .link {
+        color: white;
+        font-size: 1.2rem;
+        display: block;
+        width: 100%;
+        margin-left: 0px;
+        margin-bottom: 20px;
+        text-align: center;
+        width: 100%;
+    }
+
+    #menuToggle:checked ~ label i:nth-child(2) {
+        display: block;
+    }
+    #menuToggle:checked ~ label i:nth-child(1) {
+        display: none;
+    }
+  
+    #menuToggle:not(checked) ~ label i:nth-child(1) {
+        display: block;
+    }
+ 
+    #menuToggle:not(checked) ~ label i:nth-child(2) {
+        display: none;
+    }
+
+    #menuToggle:checked ~ nav {
+        height: 100%;
+    }
+ 
+
+    
+    .barrinha {
+        display: none;
+    }
+    
+    .search * {
+        display: none;
+      }
+    
+    .search__field {
+        display: none;
+      }
+    .search__field:focus {
+        display: none;
+      }
+    .search__field:focus ~ .search__icon {
+        display: none;
+      
+      }
+    .search__icon {
+        display: none;
+      }
+
+    .searchbox {
+        display: none;
+    }
+
+    .searchresponsive {
+        display: none;
+    }
+
+    .editorialtitulo {
+        text-align: center;
+    }
+
+    .editorialp {
+        text-align: center;
+    }
+
+    .redesocial {
+        text-align: center;
+    }
+    
+    .rd {
+        padding: 0 10px 0 10px;
+    }
+
+    .conteudo-destaque .col-3 {
+        width: 50%;
+    }
+
+    .conteudo-destaque img {
+        width: 100%;
+        height: auto;
+    }
+
+    .posterwanda {
+        height: 100% !important;
+    }
+
+    .avaliacaoresponsivo {
+        display: none;
+    }
+
+    .avaliacao-conteudo .col-4 {
+        width: 50%;
+    }
+
+    .imgperfil {
+        width: 100%;
+        height: auto;
+    }
+
+
+}
+
+@media screen and (max-width: 1024px) {
+  
+    .video {
+        width: 100%;
+        align-items: center;
+        margin: 0;
+       }
+       
+       iframe {
+         
+           width: 100%;
+            height: calc(100vw/1.77);
+       }
+       
+       .sinopse {
+           display: initial;
+       }
+       
+       .texto h3 {
+            font-size: 1.1rem;
+       }
+    
+       .texto p {
+           font-size: 0.7rem;
+           margin: 0;
+       }
+    
+       .diretor {
+           display: initial;
+       }
+    
+        .lancamentos h1 {
+            margin-top: 150px;
+            text-align: center;
+        }
+    
+        .butao-sinopse {
+            display: none;
+        }
+    
+        .lancamentos .col-3 {
+            width: 100%;
+        }
+    
+        .lancamentos .offset-5 {
+            margin: 0;
+        }
+    
+        .conteudo {
+            flex-wrap: wrap;
+        }
+
+        .avaliacao-conteudo .col-4 {
+            width: 100%;
+        }
+    
+        .imgperfil {
+            width: 70px;
+            height: 70px; 
+        }
+
+        .conteudo-texto {
+            padding: 0;
+        }
+
+        .video2 {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            margin: 30px 0;
+
+        }
+
+        .textoentrevista {
+            display: none;
+        }
+}
+
+@media screen and (max-width: 450px) {
+   .video {
+    width: 100%;
+    align-items: center;
+    margin: 0;
+   }
+   
+   iframe {
+     
+       width: 100%;
+        height: calc(100vw/1.77);
+   }
+   
+   .sinopse {
+       display: none;
+   }
+   
+   .texto h3 {
+        font-size: 1.1rem;
+   }
+
+   .texto p {
+       font-size: 0.7rem;
+       margin: 0;
+   }
+
+   .diretor {
+       display: none;
+   }
+
+    .lancamentos h1 {
+        margin-top: 150px;
+        text-align: center;
+    }
+
+    .butao-sinopse {
+        display: initial;
+    }
+
+    .lancamentos .col-3 {
+        width: 100%;
+    }
+
+    .lancamentos .offset-5 {
+        margin: 0;
+    }
+
+    .conteudo {
+        flex-wrap: wrap;
+    }
+    
+    .form-select {
+        font-size: 0.3rem;
+    }
+
+    .top-flex h1 {
+        font-size: 1rem;
+    }
+
+    .conteudo-destaque .col-3 {
+        width: 50%;
+    }
+
+    .conteudo-destaque img {
+        width: 100%;
+        height: auto;
+    }
+
+    .posterwanda {
+        height: 100% !important;
+    }
+
+    .botaodestaque {
+        font-size: 0.6rem;
+    }
+
+    .video2 {
+        margin: 15px 0;
+    }
+  
+}

@@ -1,0 +1,877 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<!--  SITE DESENVOLVIDO PELO ALUNO 725559 SAMUEL LINCOLN DE OLIVERIA GOMES     -->
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="HandheldFriendly" content="true">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/f4e0173ede.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/Icon.ico">
+    <title>CineMania - Seu portal de séries e filmes</title>
+</head>
+
+<body>
+    <header class="container-fluid" style="z-index: 9999;">
+        <div class="row header-content">
+            <div class="col-5 col-lg-2 logo">
+                <img src="img/Logo.png" alt="Logo" height="120px">
+            </div>
+            <input type="checkbox" id="menuToggle">
+            <label for="menuToggle" class="menu-icon">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-times-circle"></i>
+            </label>
+            <nav class="nav col-12 col-lg-10 col-md-12 col-sm-12">
+                <a class="link active" aria-current="page" href="#lancamentos">Lançamentos</a>
+                <div class="barrinha">|</div>
+                <a class="link" href="#destaque">Em destaque</a>
+                <div class="barrinha">|</div>
+                <a class="link" href="#avaliacoes">Avaliações</a>
+                <div class="barrinha">|</div>
+                <a class="link" href="#entrevistas">Entrevistas & Making-of</a>
+                <div class="barrinha">|</div>
+                <a class="link" href="#novidades">Novidades</a>
+                <input type="text" id="txtPesquisa">
+                <button id="btnPesquisa">Pesquisar</button>
+            </nav>
+    </header>
+    <main class=" main">
+        <section class="secao-cartaz" style="margin-top: 100px;">
+            <div class="container cartaz">
+                <div class="row titulo">
+                    <div class="top-flex">
+                        <div>
+                            <a name="destaque">
+                                <h1>Filmes em cartaz</h1>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class=" conteudo-cartaz" id="IDcartaz">
+                    <div>
+                        <h1>titulo</h1>
+                    </div>
+                    <img src="img/noticia2.png"  width="400" height="225">
+                    <div>
+                       sinopse aqui
+                    </div>  
+                    <div>
+                       data aqui
+                    </div>
+                    <br>
+                </div>
+            </div>
+        </section>
+
+        <section class="secao-lancamentos">
+            <div class="container-fluid lancamentos">
+                <div class="row titulo">
+                    <div class="col-3  offset-5">
+                        <a name="lancamentos">
+                            <h1>Lançamentos</h1>
+                        </a>
+                    </div>
+                </div>
+                <div class="row content">
+                    <div id="carouselLancamento" class="carousel slide" data-ride="carousel" data-interval="false">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="conteudo">
+                                    <div class="video">
+                                        <iframe width="889" height="500" src="https://www.youtube.com/embed/tjujvMkqWe4"
+                                            title="YouTube video player" frameborder="0"
+                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                            allowfullscreen></iframe>
+                                    </div>
+                                    <div class="texto">
+                                        <h3>The Witcher 2º temporada</h3>
+                                        <p class="sinopse">
+                                            <strong>Sinopse:</strong> Geralt de Rivia (Henry Cavill) é um solitário
+                                            caçador de monstros, que luta para encontrar seu lugar num mundo onde
+                                            pessoas são mais crueis que criaturas. Mas seu caminho irá cruzar com duas
+                                            figuras que mudarão sua vida: a feiticeira Yennefer de Vengerberg (Anya
+                                            Chalotra) e a princesa poderosa Cintran Ciri (Freya Allan).
+                                        </p>
+                                        <p class="diretor">
+                                            <span>
+                                                <strong>Diretor:</strong> Alik Sakharov
+                                            </span>
+                                            <span>
+                                                <strong>Roteiro:</strong> Andrzej Sapkowski
+                                            </span>
+                                            <span>
+                                                <strong>Estreia:</strong> 2021
+                                            </span>
+                                        </p>
+                                        <p>
+                                            <strong>Elenco:</strong>
+                                        </p>
+                                        <p>
+                                            Henry Cavill | Anya Chalotra | Freya Allan
+                                        </p>
+                                        <p>
+                                            <strong>Avaliação: </strong>
+                                        </p>
+                                        <p>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star-half-alt"></i>
+                                        </p>
+                                    </div>
+                                    <div class="butao-sinopse">
+                                        <a type="button" class="btn btn-secondary btn-sm" href="#"
+                                            style="margin-top: 30px;">
+                                            <i class="fas fa-plus" style="padding-right: 5px;"></i> Sinopse
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="conteudo">
+                                    <div class="video">
+                                        <iframe width="889" height="500" src="https://www.youtube.com/embed/sj9J2ecsSpo"
+                                            title="YouTube video player" frameborder="0"
+                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                            allowfullscreen></iframe>
+                                    </div>
+                                    <div class="texto">
+                                        <h3>WandaVision</h3>
+                                        <p class="sinopse">
+                                            <strong>Sinopse:</strong> Três semanas após os eventos de
+                                            Vingadores: Ultimato (2019), Wanda Maximoff e Visão estão vivendo uma
+                                            vida suburbana idílica na cidade de Westview,
+                                            tentando esconder suas verdadeiras identidades. À medida que começam a
+                                            entrar nas novas décadas, o casal suspeita que as coisas não são o que
+                                            parecem.
+                                        </p>
+                                        <p class="diretor">
+                                            <span>
+                                                <strong>Diretor:</strong> Matt Shakman
+                                            </span>
+                                            <span>
+                                                <strong>Roteiro:</strong> Jac schaeffer
+                                            </span>
+                                            <span>
+                                                <strong>Estreia:</strong> 2021
+                                            </span>
+                                        </p>
+                                        <p>
+                                            <strong>Elenco:</strong>
+                                        </p>
+                                        <p>
+                                            Elisabeth Olsen | Paul Bettany | Kathryn Hahn | Teyonah Parris
+                                        </p>
+                                        <p>
+                                            <strong>Avaliação: </strong>
+                                        </p>
+                                        <p>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                        </p>
+                                    </div>
+                                    <div class="butao-sinopse">
+                                        <a type="button" class="btn btn-secondary btn-sm" href="#"
+                                            style="margin-top: 30px;">
+                                            <i class="fas fa-plus" style="padding-right: 5px;"></i> Sinopse
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="conteudo">
+                                    <div class="video">
+                                        <iframe width="889" height="500" src="https://www.youtube.com/embed/uVQu7byChTk"
+                                            title="YouTube video player" frameborder="0"
+                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                            allowfullscreen></iframe>
+                                    </div>
+                                    <div class="texto">
+                                        <h3>Loki</h3>
+                                        <p class="sinopse">
+                                            <strong>Sinopse:</strong> Loki é levado para a misteriosa organização AVT
+                                            (Autoridade da Variação do Tempo) depois de roubar o Tesseract, durante os
+                                            eventos de Vingadores: Ultimato (2019), e usa-o para viajar no tempo
+                                            alterando a história da humanidade, terminando preso em seu próprio thriller
+                                            policial.
+                                        </p>
+                                        <p class="diretor">
+                                            <span>
+                                                <strong>Diretor:</strong> Kate Herron
+                                            </span>
+                                            <span>
+                                                <strong>Roteiro:</strong> Michael Waldron
+                                            </span>
+                                            <span>
+                                                <strong>Estreia:</strong> 2021
+                                            </span>
+                                        </p>
+                                        <p>
+                                            <strong>Elenco:</strong>
+                                        </p>
+                                        <p>
+                                            Tom Hiddleston | Owen Wilson |
+                                        </p>
+                                        <p>
+                                            <strong>Avaliação: </strong>
+                                        </p>
+                                        <p>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="far fa-star"></i>
+
+                                        </p>
+                                    </div>
+                                    <div class="butao-sinopse">
+                                        <a type="button" class="btn btn-secondary btn-sm" href="#"
+                                            style="margin-top: 30px;">
+                                            <i class="fas fa-plus" style="padding-right: 5px;"></i> Sinopse
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="conteudo">
+                                    <div class="video">
+                                        <iframe width="889" height="500" src="https://www.youtube.com/embed/LcDQqGJG8pA"
+                                            title="YouTube video player" frameborder="0"
+                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                            allowfullscreen></iframe>
+                                    </div>
+                                    <div class="texto">
+                                        <h3>Cobra Kai</h3>
+                                        <p class="sinopse">
+                                            <strong>Sinopse:</strong> 30 anos após os acontecimentos
+                                            do filme original a história segue Johnny Lawrence. Fracassado e
+                                            alcoolatra,
+                                            ele busca redenção ao reabrir o infame dojo Cobra Kai, reacendendo a sua
+                                            rivalidade
+                                            com o agora bem-sucedido Daniel LaRusso, que tem lutado para manter o
+                                            equilíbrio em
+                                            sua vida sem a orientação de seu mentor, sr. Miyagi.
+                                        </p>
+                                        <p class="diretor">
+                                            <span>
+                                                <strong>Diretor:</strong> Katrin L. Goodson
+                                            </span>
+                                            <span>
+                                                <strong>Roteiro:</strong> James Lassiter
+                                            </span>
+                                            <span>
+                                                <strong>Estreia:</strong> 2021
+                                            </span>
+                                        </p>
+                                        <p>
+                                            <strong>Elenco:</strong>
+                                        </p>
+                                        <p>
+                                            Ralph Macchio | William Zabka | Courtney Henggeler | Xolo Maridueña
+                                        </p>
+                                        <p>
+                                            <strong>Avaliação: </strong>
+                                        </p>
+                                        <p>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                        </p>
+                                    </div>
+                                    <div class="butao-sinopse">
+                                        <a type="button" class="btn btn-secondary btn-sm" href="#"
+                                            style="margin-top: 30px;">
+                                            <i class="fas fa-plus" style="padding-right: 5px;"></i> Sinopse
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="conteudo">
+                                    <div class="video">
+                                        <iframe width="889" height="500" src="https://www.youtube.com/embed/6MRxT8kz30k"
+                                            title="YouTube video player" frameborder="0"
+                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                            allowfullscreen></iframe>
+                                    </div>
+                                    <div class="texto">
+                                        <h3>Shingeki no Kyojin Final Season</h3>
+                                        <p class="sinopse">
+                                            <strong>Sinopse:</strong> Gabi Braun e Falco Grice treinaram suas vidas
+                                            inteiras para herdar um dos sete titãs sob o controle de Marley e ajudar sua
+                                            nação a erradicar os Eldians em Paradis. No entanto sua paz é repentinamente
+                                            abalada pela chegada de
+                                            Eren Yeager e dos membros restantes do corpo de Reconhecimento.
+                                        </p>
+                                        <p class="diretor">
+                                            <span>
+                                                <strong>Diretor:</strong> Tetsurō Araki
+                                            </span>
+                                            <span>
+                                                <strong>Roteiro:</strong> Hajime Isayama
+                                            </span>
+                                            <span>
+                                                <strong>Estreia:</strong> 2021
+                                            </span>
+                                        </p>
+                                        <p>
+                                            <strong>Elenco:</strong>
+                                        </p>
+                                        <p>Yuki Kaiji | Yui Ishikawa | Marina Inoue</p>
+                                        </p>
+                                        <p>
+                                            <strong>Avaliação: </strong>
+                                        </p>
+                                        <p>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star-half-alt"></i>
+                                        </p>
+                                    </div>
+                                    <div class="butao-sinopse">
+                                        <a type="button" class="btn btn-secondary btn-sm" href="#"
+                                            style="margin-top: 30px;">
+                                            <i class="fas fa-plus" style="padding-right: 5px;"></i> Sinopse
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="conteudo">
+                                    <div class="video">
+                                        <iframe width="889" height="500" src="https://www.youtube.com/embed/02gEAQ_rK6Y"
+                                            title="YouTube video player" frameborder="0"
+                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                            allowfullscreen></iframe>
+                                    </div>
+                                    <div class="texto">
+                                        <h3>Boku no Hero 5º temporada</h3>
+                                        <p class="sinopse">
+                                            <strong>Sinopse:</strong> Boku no Hero conta a história de Izuku "Deku"
+                                            Midoriya, um jovem que nasceu sem Indivualidade (poder) em um mundo em que
+                                            80% da população manifesta ao menos uma desde criança. O sonho do jovem de
+                                            se tornar um herói, inspirado pelo herói nº 1, All Might, é massacrado
+                                            quando
+                                            ele descobre sua condição.
+                                        </p>
+                                        <p class="diretor">
+                                            <span>
+                                                <strong>Diretor:</strong> Masahiro Mukai
+                                            </span>
+                                            <span>
+                                                <strong>Roteiro:</strong> Kohei Horikoshi
+                                            </span>
+                                            <span>
+                                                <strong>Estreia:</strong> 2021
+                                            </span>
+                                        </p>
+                                        <p>
+                                            <strong>Elenco:</strong>
+                                        </p>
+                                        <p>Daiki Yamashita | Yuki Kaiji | Nobuhiko Okamoto | Kenta Miyake</p>
+                                        </p>
+                                        <p>
+                                            <strong>Avaliação: </strong>
+                                        </p>
+                                        <p>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                        </p>
+                                    </div>
+                                    <div class="butao-sinopse">
+                                        <a type="button" class="btn btn-secondary btn-sm" href="#"
+                                            style="margin-top: 30px;">
+                                            <i class="fas fa-plus" style="padding-right: 5px;"></i> Sinopse
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="conteudo">
+                                    <div class="video">
+                                        <iframe width="889" height="500" src="https://www.youtube.com/embed/OMIwzQlsT_Q"
+                                            title="YouTube video player" frameborder="0"
+                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                            allowfullscreen></iframe>
+                                    </div>
+                                    <div class="texto">
+                                        <h3>Tensei Shitara Slime Datta Ken 2</h3>
+                                        <p class="sinopse">
+                                            <strong>Sinopse:</strong> Depois de ser morto por um ladrão que fugia, um
+                                            rapaz se encontra reencarnado em um outro mundo como um slime. Com o nome
+                                            "Rimuru Tempest" ele começa sua vida de slime em outro mundo com seu
+                                            crescente número de seguidores.
+                                        </p>
+                                        <p class="diretor">
+                                            <span>
+                                                <strong>Diretor:</strong> Atsushi Nakayama
+                                            </span>
+                                            <span>
+                                                <strong>Roteiro:</strong> Kazuyuki Fudeyasu
+                                            </span>
+                                            <span>
+                                                <strong>Estreia:</strong> 2021
+                                            </span>
+                                        </p>
+                                        <p>
+                                            <strong>Elenco:</strong>
+                                        </p>
+                                        <p>Miho Osaka | Makoto Furukawa | Takuya Eguchi | Sayaka Senbongi</p>
+                                        </p>
+                                        <p>
+                                            <strong>Avaliação: </strong>
+                                        </p>
+                                        <p>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star-half-alt"></i>
+                                            <i class="far fa-star"></i>
+                                        </p>
+                                    </div>
+                                    <div class="butao-sinopse">
+                                        <a type="button" class="btn btn-secondary btn-sm" href="#"
+                                            style="margin-top: 30px;">
+                                            <i class="fas fa-plus" style="padding-right: 5px;"></i> Sinopse
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="conteudo">
+                                    <div class="video">
+                                        <iframe width="889" height="500" src="https://www.youtube.com/embed/Gi_nzRsTmtc"
+                                            title="YouTube video player" frameborder="0"
+                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                            allowfullscreen></iframe>
+                                    </div>
+                                    <div class="texto">
+                                        <h3>Haikyuu!! To the Top</h3>
+                                        <p class="sinopse">
+                                            <strong>Sinopse:</strong> Shouyou Hinata, ao ver uma partida de voleibol,
+                                            fica fascinado com “o Pequeno Gigante”, um habilidoso jogador de vôlei,
+                                            então decide juntar-se ao clube de vôlei de sua escola.
+                                        </p>
+                                        <p class="diretor">
+                                            <span>
+                                                <strong>Diretor:</strong> Susumu Mitsunaka
+                                            </span>
+                                            <span>
+                                                <strong>Roteiro:</strong> Taku Kishimoto
+                                            </span>
+                                            <span>
+                                                <strong>Estreia:</strong> 2021
+                                            </span>
+                                        </p>
+                                        <p>
+                                            <strong>Elenco:</strong>
+                                        </p>
+                                        <p>Kaito Ishikawa | Aki Nagao Haruka Yamazaki | Hiroki Matsukawa</p>
+                                        </p>
+                                        <p>
+                                            <strong>Avaliação: </strong>
+                                        </p>
+                                        <p>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star-half-alt"></i>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="indicators-height">
+                            <ol class="carousel-indicators">
+                                <li data-target="#carouselLancamento" data-slide-to="0" class="bg-dark active"></li>
+                                <li data-target="#carouselLancamento" data-slide-to="1" class="bg-dark mx-2"></i></li>
+                                <li data-target="#carouselLancamento" data-slide-to="2" class="bg-dark"></i></li>
+                                <li data-target="#carouselLancamento" data-slide-to="3" class="bg-dark mx-2"></i></li>
+                                <li data-target="#carouselLancamento" data-slide-to="4" class="bg-dark"></i></li>
+                                <li data-target="#carouselLancamento" data-slide-to="5" class="bg-dark mx-2"></i></li>
+                                <li data-target="#carouselLancamento" data-slide-to="6" class="bg-dark"></i></li>
+                                <li data-target="#carouselLancamento" data-slide-to="7" class="bg-dark mx-2"></i></li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="secao-destaque">
+            <div class="container destaque">
+                <div class="row titulo">
+                    <div class="top-flex">
+                        <div>
+                            <a name="destaque">
+                                <h1>Em destaque</h1>
+                            </a>
+                        </div>
+                        <div>
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected>Todos</option>
+                                <option value="1">Séries</option>
+                                <option value="2">Animações</option>
+
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="row conteudo-destaque">
+                    <div class="col-3 destaque-imagens">
+                        <img src="img/TheWitcherPoster.png" alt="Poster The Witcher" width="280" height="350">
+                    </div>
+                    <div class="col-3 destaque-imagens">
+                        <img src="img/WandaVisionPoster.png" class="posterwanda" alt="Poster WandaVision" width="280"
+                            height="350">
+                    </div>
+                    <div class="col-3 destaque-imagens">
+                        <img src="img/SnkPoster.png" alt="Poster Shingeki no Kyojin" width="280" height="350">
+                    </div>
+                    <div class="col-3 destaque-imagens">
+                        <img src="img/haikyuuPoster.png " alt="Poster Haikyuu" width="280" height="350">
+                    </div>
+                </div>
+                <div class="d-flex flex-row-reverse">
+                    <div class="p-2">
+                        <a type="button" class="btn btn-secondary botaodestaque" href="#" style="margin-top: 30px;">
+                            <i class="fas fa-plus" style="padding-right: 5px;"></i> Ver mais
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="secao-avaliacao">
+            <div class="container avaliacao">
+                <div class="row titulo">
+                    <a name="avaliacoes">
+                        <h1>Últimas Avaliações</h1>
+                    </a>
+                </div>
+                <div class="container avaliacao-conteudo">
+                    <div class="row">
+                        <div class="avaliacao-texto col-4">
+                            <div class="conteudo">
+                                <div>
+                                    <img src="img/perfil1.jpg" alt="" class="imgperfil" width="70" height="70"
+                                        style="border-radius: 100%;">
+                                </div>
+                                <div class="conteudo-texto">
+                                    <h5>Gabriel Martins</h5>
+                                    <p><strong>The Witcher</strong></p>
+                                    <p class="text-justify">
+                                        <strong>Avaliação:</strong> Vale a pena assistir, a série é muito boa. Henry
+                                        Cavill
+                                        bem demais, com ótimas cenas
+                                        de ação e belos efeitos visuais. Os personagens secundários são ótimos e a
+                                        história se desenvolve muito bem. Bem difícil não gostar. </p>
+                                    <p>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <span style="margin-left: 30px;"><strong>25/03/2021</strong></span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="avaliacao-texto col-4">
+                            <div class="conteudo">
+                                <div>
+                                    <img src="img/perfil2.jpg" class="imgperfil" alt="" width="70" height="70"
+                                        style="border-radius: 100%;">
+                                </div>
+                                <div class="conteudo-texto">
+                                    <h5>Israel Peres</h5>
+                                    <p><strong>Cobra Kai</strong></p>
+                                    <p class="text-justify">
+                                        <strong>Avaliação:</strong> Indispensável para fãs da série Karate Kid. Os
+                                        atores que fizeram os personagens originais
+                                        atuaram magistralmente, e os personagens novos são interessantes e bem
+                                        desenvolvidos. Vale muito a pena.</p>
+                                    <p>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <span style="margin-left: 30px;"><strong>25/03/2021</strong></span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="avaliacao-texto col-4 avaliacaoresponsivo">
+                            <div class="conteudo">
+                                <div>
+                                    <img src="img/perfil3.jpg" class="imgperfil" alt="" width="70" height="70"
+                                        style="border-radius: 100%;">
+                                </div>
+                                <div class="conteudo-texto">
+                                    <h5>Raissa Lopes</h5>
+                                    <p><strong>WandaVision</strong></p>
+                                    <p class="text-justify">
+                                        <strong>Avaliação:</strong> Não é a toa que a Marvel é chamada de "A CASA DAS
+                                        IDEIAS!" WandaVision é uma homenagem as series de sitcom, feita com muita
+                                        criatividade, inovação e uma qualidade de filme blockbuster.</p>
+                                    <p>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <span style="margin-left: 30px;"><strong>25/03/2021</strong></span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="d-flex flex-row-reverse">
+                        <div class="p-2">
+                            <a type="button" class="btn btn-secondary" href="#">
+                                <i class="fas fa-plus" style="padding-right: 5px;"></i> Ver mais
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="secao-entrevistas">
+            <div class="container entrevistas">
+                <div class="row titulo">
+                    <a name="entrevistas">
+                        <h1>Entrevistas & Making-of</h1>
+                    </a>
+                </div>
+
+                <div class="row videos">
+                    <div class="col-4 video2">
+                        <iframe width="350" height="197" src="https://www.youtube.com/embed/WZkEgX7lfQs"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                    <div class="col-4 video2">
+                        <iframe width="350" height="197" src="https://www.youtube.com/embed/-F1tAQ5453k"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                    <div class="col-4 video2">
+                        <iframe width="350" height="197" src="https://www.youtube.com/embed/e33CXeilGu0"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="row texto textoentrevista">
+                    <div class="col-4">
+                        <span>
+                            <strong>
+                                <h5>Série: </h5>
+                            </strong>
+                            <h5>The Witcher</h5>
+                            <p class="primeiro-p">
+                                <strong>Diretor:</strong> Alik Sakharov
+                            </p>
+                            <p>
+                                <strong>Roteiro:</strong> Andrzej Sapkowski
+                                <strong>Estreia:</strong> 2021
+                            </p>
+                        </span>
+                    </div>
+                    <div class="col-4">
+                        <span>
+                            <strong>
+                                <h5>Série: </h5>
+                            </strong>
+                            <h5>WandaVision</h5>
+                            <p class="primeiro-p">
+                                <strong>Diretor:</strong> Matt Shakman
+                            </p>
+                            <p>
+                                <strong>Roteiro:</strong> Jac schaeffer
+                                <strong>Estreia:</strong> 2021
+                            </p>
+                        </span>
+                    </div>
+                    <div class="col-4">
+                        <span>
+                            <strong>
+                                <h5>Série: </h5>
+                            </strong>
+                            <h5>Cobra Kai</h5>
+                            <p class="primeiro-p">
+                                <strong>Diretor:</strong> Katrin L. Goodson
+                            </p>
+                            <p>
+                                <strong>Roteiro:</strong> James Lassiter
+                                <strong>Estreia:</strong> 2021
+                            </p>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="secao-novidades">
+            <div class="container-fluid novidades">
+                <div class="row" style="margin-top: 30px;">
+                    <div class="col-8">
+                        <a name="novidades">
+                            <h1 class="titulonovidades" style="margin-bottom: 30px; margin-left: 30px;">Novidades</h1>
+                        </a>
+                        <div class="container-fluid conteudo2">
+                            <div class="imagem" style="max-height: 205px;">
+                                <img src="img/noticia1.jpg" alt="" width="400" height="225" style="margin-right: 10px;">
+                            </div>
+                            <div class="texto-novidades">
+                                <a href="https://poltronanerd.com.br/series/the-boys-tudo-que-sabemos-sobre-a-terceira-temporada-ate-agora-109805"
+                                    class="link">
+                                    <h5>O que sabemos sobre a 3ª temporada de The Boys?</h5>
+                                </a>
+                                <p class="novidades-p">
+                                    A nova temporada de The Boys traz Hughie (Jack Quaid) passando a trabalhar para a
+                                    famosa congressista Victoria Neuman (Claudia Doumit) — que não é a pessoa bondosa
+                                    que parece ser. Já a dinâmica dos Sete muda completamente quando Maeve (Dominique
+                                    McElligott) passa a chantagear Homelander.
+                                </p>
+                                <span class="novidades-s">Séries</span>
+                                <span class="novidades-s"">Lançamentos</span>
+                                <span class=" novidades-s">Super-heróis</span>
+                            </div>
+                        </div>
+                        <div>
+                            <hr>
+                        </div>
+                        <div class="container-fluid conteudo2">
+                            <div class="imagem">
+                                <img src="img/noticia2.png" alt="" width="400" height="225" style="margin-right: 10px;">
+                            </div>
+                            <div class="texto-novidades">
+                                <a href="https://www.omelete.com.br/marvel-cinema/falcao-soldado-invernal-disney-projeta-escudo-capitao-america"
+                                    class="link">
+                                    <h5>Disney projeta escudo pelo mundo para celebrar Falcão e o Soldado Invernal</h5>
+                                </a>
+                                <p class="novidades-p">
+                                    Para celebrar a estreia de Falcão e o Soldado Invernal, a Disney organizou projeções
+                                    do escudo do Capitão América em todo o mundo. Através de video mapping, o
+                                    emblemático escudo de Steve Rogers (Chris Evans) foi exibido na Inglaterra,
+                                    Singapura, Itália,
+                                    Suíça, França, Argentina, México e na Austrália.
+                                </p>
+                                <span class="novidades-s"">Séries</span>
+                                <span class=" novidades-s"">Lançamentos</span>
+                                <span class="novidades-s">Super-heróis</span>
+                            </div>
+                        </div>
+                        <div>
+                            <hr class="hr" style="margin-top: 40px;">
+                        </div>
+                        <div class="container-fluid conteudo2">
+                            <div class="imagem">
+                                <img src="img/noticia3.jpg" alt="" width="400" height="225" style="margin-right: 10px;">
+                            </div>
+                            <div class="texto-novidades">
+                                <a href="https://www.omelete.com.br/netflix/netflix-novidades-abril-2021" class="link">
+                                    <h5>Confira o que chega na Netflix em abril de 2021</h5>
+                                </a>
+                                <p class="novidades-p">
+                                    A Netflix divulgou sua lista de filmes, séries, documentários e animes que chegarão
+                                    ao catálogo nacional em abril. O mês é marcado especialmente pelas produções
+                                    originais, entre elas o seriado Sombra e Ossos, que adapta a obra de Leigh Bardugo.
+                                </p>
+                                <span class="novidades-s">Séries</span>
+                                <span class="novidades-s">Lançamentos</span>
+                                <span class="novidades-s">Super-heróis</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <h1 class="titulosobre">Sobre</h1>
+                        <p class="p-sobre">Site criado pelo aluno Samuel Gomes da PUC-Minas. O site foi feito utilizando
+                            os
+                            conhecimentos
+                            adquiridos de HTML 5, CSS 3 e Bootstrap 4 (unidades 1 e 2), com implementação de viewport e
+                            mediaQueries para torná-lo
+                            responsivo. Todas as sinopeses e avaliações foram retiradas de sites de filmes e séries,
+                            como o Omelete,
+                            AdoroCinema e My Animes List.
+                        </p>
+                        <h1 class="editorialtitulo">Editorial</h1>
+                        <p class="editorialp">
+                            <span><i class="fas fa-user"></i></span>
+                            <span><strong>Redação: </strong></span>
+                            Samuel Gomes
+                        </p>
+                        <p class="editorialp">
+                            <span><i class="fas fa-user"></i></span>
+                            <span><strong>Pesquisa: </strong></span>
+                            Samuel Gomes
+                        </p>
+                        <p class="editorialp">
+                            <span><i class="fas fa-user"></i></span>
+                            <span><strong>Gerente geral: </strong></span>
+                            Samuel Gomes
+                        </p>
+                        <p class="editorialp">
+                            <h3 class=editorialtitulo>Redes sociais</h3>
+                            <p class="redesocial"><i class="fab fa-facebook-square fa-2x rd"></i>
+                                <i class="fab fa-twitter fa-2x rd"></i>
+                                <i class="fab fa-instagram-square fa-2x rd"></i></p>
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer class="container-fluid footer">
+        <div class="row">
+            <div class="col-12">
+                <p>
+                    <i class="fa fa-copyright" aria-hidden="true"></i> Copyright 2020 - Disciplina
+                    de Desenvolvimento e Interfaces Web - <strong>ICEI PUC Minas</strong>
+                </p>
+            </div>
+        </div>
+
+    </footer>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
+    </script>
+    <script src="app.js"></script>
+</body>
+
+</html>
